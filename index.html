@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic TOC Toe</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+    <div class="main-content">
+        <div class="coins22  " id="leftcoin">
+            <div>
+                <img src="./coin.png" class="coinimg1">
+            </div>
+            <div><img src="./coin.png" class="coinimg2">
+                <img src="./coin.png" class="coinimg2">
+            </div>
+            <div> <img src="coin.png" class="coinimg3">
+                <img src="coin.png" class="coinimg3">
+                <img src="coin.png" class="coinimg3">
+            </div>
+            <div>
+                <img src="./coin.png" class="coinimg4 ">
+                <img src="./coin.png" class="coinimg4">
+                <img src="./coin.png" class="coinimg4">
+                <img src="./coin.png" class="coinimg4">
+            </div>
+
+        </div>
+
+        <div class="coins22 coinright2 " id="rightcoin">
+            <div><img src="./coin.png" class="coinimg1">
+            </div>
+            <div><img src="./coin.png" class="coinimg2">
+                <img src="./coin.png" class="coinimg2">
+            </div>
+            <div>
+                <img src="./coin.png" class="coinimg3">
+                <img src="./coin.png" class="coinimg3">
+                <img src="./coin.png" class="coinimg3">
+            </div>
+            <div>
+                <img src="./coin.png" class="coinimg4 ">
+                <img src="./coin.png" class="coinimg4">
+                <img src="./coin.png" class="coinimg4">
+                <img src="./coin.png" class="coinimg4">
+            </div>
+
+        </div>
+        <div class="main-logo ">
+            <img class="logo" src="./logo_88.png">
+            <h2 class="title" id="title"> SUBWAY SURFERS TIC TAC TOE</h2>
+            <div>
+                <img src="./gift.png" class="winnerbox hide" id="winnerbox">
+            </div>
+            <div>
+                <img src="./ss.png" class="winnerbox hide" id="winnerbox1">
+            </div>
+        </div>
+        <div class="Main-Container">
+            <div class="firstplayer">
+                <img src="./img5.png" class="img-1 " id="img-1">
+                <img src="./coin.png" id="coin-img" class="coin-img hide">
+            </div>
+            <div class="main-game">
+                <div class="Container">
+                    <div class="starting-page" id="starting-page">
+                        <h2>TIC TAC TOE</h2>
+                        <div class="line"></div>
+                        <h3>Select which you want to be?</h3>
+                        <div class="button">
+                            <button id='playerX' class="choose">Player X</button>
+                            <button id='playerO' class=" choose">Player 0</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main page -->
+                <div class="Container1 hide">
+                    <div class="main-page" id="main-page">
+                        <div class="mainbts">
+                            <button class="x-turn" id="x-turn">X - Turn</button>
+                            <button class="o-turn" id="o-turn">O - Turn</button>
+                            <div class="showchange" id="showchange"></div>
+                        </div>
+
+                        <div id="gamebord" class="gamebord">
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+                            <div class="boxes"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- winner page -->
+                <div class="Container2 " id="Container2">
+                    <div id="winner" class="winner">
+                        <h2 id="winnername">Player X Win The Game</h2>
+                        <div class="Quitbtn"><button id='Quit' class="Quit">Play Again</button></div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="secondplayer">
+
+                <img class="img-2 " src="./img3.png" id="img-2" alt="">
+                <img src="./coin.png" id="coin-img1" class="coin-img hide" />
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

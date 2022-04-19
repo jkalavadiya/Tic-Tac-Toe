@@ -1,0 +1,603 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    background: #131419;
+    background-image: url('./background.jpg');
+    background-size:cover;
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.main-logo{
+    display: flex;
+    align-items: center;
+    /* color:#c3c4c3; */
+    color: #81B740;
+    justify-content: center;
+    /* width: 100%; */
+}
+.logo{
+    transition: all;
+   
+    animation: logo 3s infinite;
+}
+@keyframes logo  {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
+/* .coin4{
+    width: 64px;
+        animation: bounce 2s forwards;
+        transform-origin: center bottom;
+} */
+  
+.coins22{
+    /* display: flex; */
+    position: absolute;
+    top:-300px;
+    left: 70px;
+    z-index: 10;
+    transition: all 1s linear;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction:column; */
+    text-align: center;
+    /* animation: bounce 2s ; */
+    /* transform-origin: center bottom; */
+}
+/* @keyframes bounce{
+
+    0%
+    {
+        top: -200px;
+    }
+    25%
+    {
+        top:0px;
+    }
+    100%{
+        bottom: 200px;
+    }
+    75%{
+        bottom: 400px;
+    }
+    100%{
+        bottom: 200px;
+    }
+  }
+@keyframes bounce1{
+
+    0%
+    {
+        top: -200px;
+    }
+    25%
+    {
+        top:0px;
+    }
+    100%{
+        bottom: 180px;
+    }
+    75%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 150px;
+    }
+  }
+@keyframes bounce2{
+    0%
+    {
+        top: -200px;
+    }
+    25%
+    {
+        top:0px;
+    }
+    100%{
+        bottom: 100px;
+    }
+    75%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 100px;
+    }
+  }
+@keyframes bounce3{
+    0%
+    {
+        top: -200px;
+    }
+    25%
+    {
+        top:0px;
+    }
+    100%{
+        bottom: 50px;
+    }
+    75%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 50px;
+    }
+  } */
+  .coinright2{
+      right:70px;
+      left: unset;
+  }
+
+.coinimg1{
+    width:50px;
+    height:50px;
+    position: relative;
+    animation-duration:0.2s;
+    animation:  bounce 1.5s linear ;
+    animation-iteration-count: 2;
+
+}
+.coinimg2{
+    width:50px;
+    height:50px;
+    animation-duration: 0.6s;
+    position: relative;
+    animation:  bounce1 1s linear   ; 
+}
+.coinimg3{
+    width:50px;
+    height:50px;
+    animation-duration: 0.4s;
+    position: relative;
+    animation:  bounce2 0.8s linear    ; 
+    
+}
+.coinimg4{
+    width: 50px;
+    height: 50px;
+    animation-duration:0.2s;
+    position: relative;
+    animation:  bounce3 0.5s linear    ; 
+}
+
+
+.coins{
+    display: flex;
+    flex-direction: column;
+    
+}
+.multic{
+    width: 40%;
+    height: 40%;
+}
+
+.title{
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+ 
+  
+}
+.title:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    ;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.title:active{
+    color: #81B740;;
+}
+.title:active::after{
+    background: transparent;
+}
+.title:hover:hover:before{
+    opacity: 1;
+}
+.title::after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.main-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.Main-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstplayer{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 33.33%;
+  
+
+}
+.main-game{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+.secondplayer{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 33.33%;
+
+}
+
+.Container {
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom, #2b2d47 10%, #181926);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 1px 2px 0px rgb(255, 255, 255/18%), inset -2px -2px 2px rgb(0 0 0 /65%);
+    margin: 0 auto;
+    /* margin-top: 120px; */
+}
+
+.Container1 {
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom, #2b2d47 10%, #181926);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 1px 2px 0px rgb(255, 255, 255/18%), inset -2px -2px 2px rgb(0 0 0 /65%);
+    margin: 0 auto;
+    /* margin-top: 120px; */
+
+}
+
+.Container2 {
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom, #2b2d47 10%, #181926);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 1px 2px 0px rgb(255, 255, 255/18%), inset -2px -2px 2px rgb(0 0 0 /65%);
+    margin: 0 auto;
+    /* margin-top: 120px; */
+    display: none;
+
+}
+
+.starting-page {
+    width: 300px;
+    height: 260px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.starting-page h2 {
+    font-size: 40px;
+    color: #c3c4c3;
+}
+
+.line {
+    height: 1px;
+    background: #c3cfdb;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.starting-page h3 {
+    font-size: 18px;
+    color: #b9b9c5;
+    
+}
+
+.button {
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+
+}
+
+.Quit {
+    /* margin: 20px 0; */
+    margin-right: 0px !important;
+    margin-top:30px;
+    height: 55px;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #2b2d47;
+    font-weight: 600;
+    /* background-color: #29cde0; */
+    /* background-color:#ffcdd2; */
+    background-color: #81B740;
+    border-radius: 10px;
+}
+
+.Quit:hover {
+    transform: scale(0.90);
+}
+
+.choose {
+    height: 55px;
+    width: 150px;
+    cursor: pointer;
+    /* background: #29cde0; */
+    /* background: #ffebee; */
+    /* background: #ffcdd2; */
+    background: #81B740;
+    border: none;
+    outline: none;
+    color: #2b2d47;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+button:first-child {
+    margin-right: 30px;
+}
+
+.choose:hover {
+    transform: scale(0.90);
+}
+
+.winner {
+    height: 200px;
+    width: 240px;
+}
+
+.winner h2 {
+    font-size: 20px;
+    color: #c3c4c3;
+    text-align: center;
+
+}
+.Quitbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hide {
+    display: none;
+}
+
+.main-page {
+    /* width: 330px; */
+    height:350px;
+    padding: 20px;
+    position: relative;
+    /* display: none; */
+}
+
+.mainbts {
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px rgb(255 255 255 /26%), -2px -2px 5px rgb(0 0 0 /87%);
+}
+
+.x-turn {
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.60);
+
+}
+
+.o-turn {
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+
+.showchange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #29cde0; */
+    /* background: #ffcdd2; */
+    /* background: #ef9a9a; */
+    background: #81B740;
+    width: 160px;
+    height: 60px;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.gamebord {
+    height:280px;
+    position: absolute;
+    top:110px;
+    /* left: 10px;
+    width: 330px; */
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+}
+
+.boxes {
+    height:80px;
+    width: 80px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 /26%), -2px -2px 5px rgb(0 0 0 /87%);
+    display: grid;
+    cursor: pointer;
+}
+
+.boxes i {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+    /* color: #29cde0; */
+    /* color: #ef9a9a; */
+    color: #81B740;
+}
+.coin-img{
+    width: 30%;
+    height: 30%;
+}
+.img-1{
+    width:50%;
+    height:50%;
+ 
+}
+.img-2{
+    width:40%;
+    height:40%;
+}
+.logo{
+    width: 100px;
+    height: 110px;
+    vertical-align: middle;
+  
+}
+.Animation1{
+    position: relative;
+    transition: 1s all ease-in-out;
+    animation: mymove 2s linear infinite; 
+}
+.Animation2{
+    position: relative;
+    animation: moveright 2s linear infinite; 
+}
+.coinAnimation{
+    position: relative;
+    animation: coinmove 2s linear infinite;
+}
+@keyframes mymove{
+    0%{left: 0px;}
+    25%{left:20px;}
+    50%{left:30px;}
+    100%{left:0px;}
+
+    
+   
+}
+@keyframes moveright{
+    0%{right: 0px;}
+    25%{right:20px;}
+    50%{right:30px;}
+    100%{right:0px;}
+
+ 
+}
+@keyframes coinmove{
+    0%{transform: translate(0); top:100px;}
+    50%{transform: translateY(-300px);}
+    100%{transform: translateY(0);}
+ 
+    
+}
+.image{
+    width: 25%;
+    height: 25%;
+    
+}
+.Animationcoins{
+    animation: coinsmove 1s ease-in-out infinite;
+}
+.ani1{
+    animation-duration: 0.2s;
+}
+.ani2{
+    animation-duration:0.7s;
+}
+.ani3{
+    animation-duration: 0.4s;
+}
+.ani4{
+    animation-duration:0.8s;
+}
+.ani5{
+    animation-duration: 0.5s;
+}
+@keyframes coinsmove{
+    0%{transform: translate(0); top:80px;}
+    50%{transform: translateY(200px);}
+    100%{transform: translateY(0);}
+   
+    
+}
+
+.winnerbox{
+    width: 250px;
+    height:250px;
+    margin-right: 50px;
+}
